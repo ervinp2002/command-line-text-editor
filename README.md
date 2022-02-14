@@ -4,8 +4,8 @@ Command line text editor for Data Structures & Algorithms class.
                Line Editor Program
 
 Designed by: Ervin Pangilinan
-Semester: Spring 2022
-Course: CSC 245 - Data Structures & Algorithms Analysis
+Semester: Spring 2022 
+Course: CSC 245 - Data Structures & Algorithms Analysis 
 Language Used: C++
 
 Objective:
@@ -44,26 +44,26 @@ the input file to update changes.
 
 OOP Design:
 The following classes/libraries are included in the program:
-    - iostream
-    - fstream
-    - cstdlib
-    - string
+  - iostream
+  - fstream
+  - cstdlib
+  - string
 
 A LineList class is implemented to model a doubly-linked list for the editor.
 The LineList ADT is described below:
-    - PRIVATE ATTRIBUTES:
-        - An external pointer for traversing the list
-        - An integer variable specifiying the current line number
-        - An integer variable specifying the length of the list.
+  - PRIVATE ATTRIBUTES:
+    -  An external pointer for traversing the list
+    -  An integer variable specifiying the current line number
+    -  An integer variable specifying the length of the list.
 
-    - PUBLIC ATTRIBUTES:
-        - A struct is defined for the individual nodes of the list.
-        - Functions for going to the top or bottom of the list.
-        - Functions for inserting to and deleting from the list.
-        - Functions for traversing the list by either moving to the
+  - PUBLIC ATTRIBUTES: 
+    -  A struct is defined for the individual nodes of the list.
+    -  Functions for going to the top or bottom of the list.
+    -  Functions for inserting to and deleting from the list.
+    -  Functions for traversing the list by either moving to the
           next or previous line.
-        - A function for printing the entire list. 
-        - Observer functions to return the string at a particular line,
+    -  A function for printing the entire list. 
+    -  Observer functions to return the string at a particular line,
           returning the length of the list, and value of the current line
           number.
 
@@ -88,12 +88,12 @@ and will continue to do so until the the end-of-file has been reached.
 Executing Commands:
 The client program uses the following uppercase characters to represent
 different commands to be executed:
-    - D (Delete the current line.)
-    - I (Insert a new line after the current line.)
-    - N (Move to the next line.)
-    - P (Move to the previous line.)
-    - L (Print the entire file, list by list.)
-    - E (Save changes to the file and exit the program.)
+  - D (Delete the current line.) 
+  - I (Insert a new line after the current line.)
+  - N (Move to the next line.)
+  - P (Move to the previous line.)
+  - L (Print the entire file, list by list.)
+  - E (Save changes to the file and exit the program.)
 
 All of these different commands make use of the external pointer provided
 by the LineList ADT. The functions for these commands also make use of a
