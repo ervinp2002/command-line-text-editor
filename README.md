@@ -70,6 +70,7 @@ The LineList ADT is described below:
 
 Client Program Outline:
 The client program can be broken down into 4 steps:
+
       - File Checking
       - Building the List
       - Executing Commands
