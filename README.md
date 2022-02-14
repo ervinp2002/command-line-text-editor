@@ -17,24 +17,26 @@ to manipulate each line of the program via specific commands.
 
 Command Line Syntax:
 ./a.out [filename]
-NOTE: The file that the user will want to edit must be on the same
-      directory as the line editor program. 
+
+Note: The file that the user wants to edit must be in the same
+      directory as the program.
 
 Sample Input:
-The input file will include any number of lines of strings such
-as the following below:
-    This is the first line!
-    This is the second line!
-    This is the third line!
+The input file will contain any amount of strings in a file such
+as the example below:
 
+      This is the first line!
+      This is the second line!
+      This is the third line!
+    
+Sample Output: 
+When the editor is launched, the user will see the file brpoken down into
+individual lines such as shown below:
 
-Sample Output:
-When the editor is launched, the user will see the file broken down
-into individual lines such as shown below:
-    1> This is the first line!
-    2> This is the second line!
-    3> This is the third line!
-    3>
+      1> This is the first line!
+      2> This is the second line!
+      3> This is the third line!
+      3>
 
 The output will still be on the command line. Also included in the file
 that the user does not see are 2 buffer regions at the very top and bottom
@@ -87,6 +89,7 @@ and will continue to do so until the the end-of-file has been reached.
 Executing Commands:
 The client program uses the following uppercase characters to represent
 different commands to be executed:
+
   - D (Delete the current line.) 
   - I (Insert a new line after the current line.)
   - N (Move to the next line.)
