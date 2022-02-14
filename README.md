@@ -31,7 +31,7 @@ as the example below:
       This is the third line!
     
 Sample Output: 
-When the editor is launched, the user will see the file brpoken down into
+When the editor is launched, the user will see the file broken down into
 individual lines such as shown below:
 
       1> This is the first line!
