@@ -70,11 +70,11 @@ The LineList ADT is described below:
 
 Client Program Outline:
 The client program can be broken down into 4 steps:
-    - File Checking
-    - Building the List
-    - Executing Commands
-    - Saving Changes
-
+      - File Checking
+      - Building the List
+      - Executing Commands
+      - Saving Changes
+      
 File Checking Phase:
 In this phase, the program will use the file name specified on the 
 command line to open a file. If no file name is listed as a command
