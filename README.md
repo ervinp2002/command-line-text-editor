@@ -1,9 +1,11 @@
 # CommandLineTextEditor
-Command line text editor for Data Structures & Algorithms class.
+Command line text editor for Data Structures & Algorithms class done in C++
 
-Designed by: Ervin Pangilinan
-Semester: Spring 2022
-Course: CSC 245 - Data Structures & Algorithms Analysis
+Designed by Ervin Pangilinan
+
+Spring 2022 Semester (v1.0) February 11, 2022
+
+Course: Data Structures & Algorithms Analysis
 
 Objective:
 The goal of this project is to create a line editor, similar to
