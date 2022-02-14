@@ -16,7 +16,7 @@ After launching the editor for the file, the user will be able
 to manipulate each line of the program via specific commands.
 
 Command Line Syntax:
-./a.out [filename]
+      ./a.out [filename]
 
 Note: The file that the user wants to edit must be in the same
       directory as the program.
