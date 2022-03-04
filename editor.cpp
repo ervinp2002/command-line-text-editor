@@ -54,6 +54,10 @@ void initialize(LineList &list, ifstream &file) {
 		getline(file, temp);
 		list.insertLine(temp);
 	}	
+	list.goToBottom();
+	// Fix the issue of an extra new line being added. 
+	if (list.getCurrLine().c_str()[0] == '\0') list.deleteLine();
+
 }
 
 void execute(LineList &list) {
