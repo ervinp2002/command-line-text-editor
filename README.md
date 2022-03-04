@@ -1,13 +1,21 @@
-# CommandLineTextEditor
+# Command Line Text Editor
 Command line text editor for Data Structures & Algorithms class done in C++
 
 Designed by Ervin Pangilinan
+
+## Changelog
+
+### March 4, 2022 (v1.1) 
+
+Fixed an issue where initializing a list upon starting a program would add an additional newline at the end of the list.
+
+## README
 
 Spring 2022 Semester (v1.0) February 11, 2022
 
 Course: Data Structures & Algorithms Analysis
 
-Objective:
+### Objective
 The goal of this project is to create a line editor, similar to
 programs such as vim by implementing a doubly-linked list. The user
 will launch the program on the command line and will provide an
@@ -15,14 +23,14 @@ additional command line argument to specify the file to edit.
 After launching the editor for the file, the user will be able
 to manipulate each line of the program via specific commands.
 
-Command Line Syntax:
+### Command Line Syntax
 
       ./a.out [filename]
 
 Note: The file that the user wants to edit must be in the same
       directory as the program.
 
-Sample Input:
+### Sample Input
 The input file will contain any amount of strings in a file such
 as the example below:
 
@@ -30,7 +38,7 @@ as the example below:
       This is the second line!
       This is the third line!
     
-Sample Output: 
+### Sample Output
 When the editor is launched, the user will see the file broken down into
 individual lines such as shown below:
 
@@ -44,7 +52,7 @@ that the user does not see are 2 buffer regions at the very top and bottom
 of the file. When the user exits the editor, the output file will overwrite 
 the input file to update changes.
 
-OOP Design:
+### OOP Design
 The following classes/libraries are included in the program:
   - iostream
   - fstream
@@ -69,7 +77,7 @@ The LineList ADT is described below:
           returning the length of the list, and value of the current line
           number.
 
-Client Program Outline:
+### Client Program Outline
 The client program can be broken down into 4 steps:
 
       - File Checking
@@ -77,18 +85,21 @@ The client program can be broken down into 4 steps:
       - Executing Commands
       - Saving Changes
       
-File Checking Phase:
+#### File Checking Phase 
+
 In this phase, the program will use the file name specified on the 
 command line to open a file. If no file name is listed as a command
 line argument or if an invalid file name is passed as an argument,
 then the program will exit. 
 
-Building the List:
+#### Building the List 
+
 In this phase, the list will be built by reading each line from the file.
 The information from each line will be inserted as a node into the list,
 and will continue to do so until the the end-of-file has been reached.
 
-Executing Commands:
+#### Executing Commands 
+
 The client program uses the following uppercase characters to represent
 different commands to be executed:
 
@@ -106,7 +117,7 @@ having one external pointer to use. Also included in these functions are
 safeguards to prevent accessing any region past the buffers at the top and
 bottom of the file.
 
-Saving Changes:
+### Saving Changes
 Saving changes to the file is done as a traversal through the list starting
 at the top line. For each node in the list, the contents of that node are
 written to a line in the output file. This is done until the last node of the
